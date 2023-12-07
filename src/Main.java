@@ -23,7 +23,7 @@ public class Main {
                     System.out.println("Your to do list:\n ");
 
                     for (String i : deals) {
-                        System.out.print((deals.indexOf(i) + 1)+ ":" + i + " ");
+                        System.out.print((deals.indexOf(i) + 1) + ":" + i + " ");
                     }
                     System.out.println("\n");
                     break;
@@ -33,26 +33,26 @@ public class Main {
                     deals.remove(index);
                     System.out.println("Your to do list:\n ");
                     for (String i : deals) {
-                        System.out.print((deals.indexOf(i) + 1)+ ":" + i + " ");
+                        System.out.print((deals.indexOf(i) + 1) + ":" + i + " ");
                     }
                     System.out.println("\n");
-                        break;
-                        case 0:
-                            System.out.println("Your to do list:\n ");
-                            for (String i : deals) {
-                                System.out.print((deals.indexOf(i) + 1) + ":" + i + " ");
-                            }
-                            System.out.println("\n");
+                    break;
+                case 0:
+                    System.out.println("Your to do list:\n ");
+                    for (String i : deals) {
+                        System.out.print((deals.indexOf(i) + 1) + ":" + i + " ");
+                    }
+                    System.out.println("\n");
                 case 3:
                     System.out.print("Put the serial number of the case you'd like to change - ");
                     int indexToChange = scanner.nextInt() - 1;
                     System.out.print("Put the new case - ");
                     String changeCase = scanner.next();
-                    deals.set(indexToChange,changeCase);
+                    deals.set(indexToChange, changeCase);
                     System.out.println("Your to do list:\n ");
 
                     for (String i : deals) {
-                        System.out.print((deals.indexOf(i) + 1)+ ":" + i + " ");
+                        System.out.print((deals.indexOf(i) + 1) + ":" + i + " ");
                     }
                     System.out.println("\n");
                     break;
@@ -60,7 +60,7 @@ public class Main {
                 default:
                     System.out.println("Wrong operation! Try again.");
                     break;
-                    }
             }
         }
     }
+}
